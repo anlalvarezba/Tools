@@ -1,8 +1,17 @@
 #include <iostream>
 //using namespace std;
 
-int main()
-{
+//CAMBIO 1
+int primos (void);
+int main(void){
+  primos();
+
+  return 0;
+}
+
+
+
+int primos(void){
   int a=0,i,n=4;
   std::cout<<"Ingrese un número"<<std::endl;
   std::cin>>n;
@@ -17,6 +26,5 @@ int main()
       else{
 	std::cout<<"Sí es primo\n";
       }
-  return 0;
-  
-}
+  }
+
