@@ -1,0 +1,5 @@
+
+.PHONY: CLEAN
+clean:
+	rm -f *~ *# a.out *.x *.txt
+	
