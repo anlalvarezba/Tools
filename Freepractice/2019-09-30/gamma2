@@ -1,0 +1,14 @@
+all: gamma2.x gamma2.txt fig_gamma2.pdf
+
+gamma2.x: gamma2.cpp
+	g++ -std=c++11 $< -o $@
+
+gamma2.txt: gamma2.x
+	./$< > $@
+
+fig_gamma2.pdf: gamma2.pg gamma2.txt
+	gnuplot $<
+
+.PHONY: clean
+clean:
+	rm -f *.x *.txt *.pdf *~ 

@@ -1,0 +1,5 @@
+set term pdf
+set output "gamma2.pdf"
+set xlabel "valores"
+set ylabel "Gamma correspondiente"
+plot "gamma2.txt" u 1:2 w l
